@@ -11,5 +11,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true
-  }
+  },
+  // Ensure React Router works with client-side routing in production
+  base: '/',
 })
