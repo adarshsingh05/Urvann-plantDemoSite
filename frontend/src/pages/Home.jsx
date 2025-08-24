@@ -167,8 +167,7 @@ const Home = () => {
                 }}
                 className="btn btn-secondary btn-lg flex items-center justify-center space-x-2 w-full sm:w-auto px-6 py-3"
               >
-                <span>Try Interactive View</span>
-                <Eye className="h-5 w-5" />
+              
               </button>
             </motion.div>
           </div>
