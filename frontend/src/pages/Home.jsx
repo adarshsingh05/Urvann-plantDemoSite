@@ -149,10 +149,7 @@ const Home = () => {
                             <strong>💡 How to try:</strong> Go to the plant catalog and click the 👁️ eye icon on any plant card to see the interactive viewer in action!
                           </p>
                         </div>
-                        <div class="flex justify-center gap-4">
-                          <button onclick="window.location.href='/catalog'" class="btn btn-primary px-6 py-3 text-base">Explore Now</button>
-                          <button onclick="this.closest('.fixed').remove()" class="btn btn-outline px-6 py-3 text-base">Close</button>
-                        </div>
+                        
                       </div>
                     </div>
                   `
@@ -167,7 +164,8 @@ const Home = () => {
                 }}
                 className="btn btn-secondary btn-lg flex items-center justify-center space-x-2 w-full sm:w-auto px-6 py-3"
               >
-              
+                <span>Try Interactive View</span>
+                <Eye className="h-5 w-5" />
               </button>
             </motion.div>
           </div>
