@@ -54,11 +54,10 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Routes
-// Note: frontend should call /api/plants
-app.use('/api/plants', plantRoutes);
+app.use('/plants', plantRoutes);
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'success',
     message: 'Urvan Plant Store API is running',
